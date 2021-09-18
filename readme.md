@@ -9,12 +9,12 @@
 // Main
 func main() {
 	dongo_event.EventManager.RegisterEvent("SayHello", EventTest_SayHello)
-	dongo_event.EventManagerEventManager.DispatchEvent("SayHello", []int{1, 2, 3})
-	dongo_event.EventManagerEventManager.RegisterEvent("SayHello", EventTest_SayHello)
-	dongo_event.EventManagerEventManager.RemoveEvent("SayHello", EventTest_SayHello)
-	dongo_event.EventManagerEventManager.DispatchEvent("SayHello", []int{1, 3})
-	dongo_event.EventManagerEventManager.RegisterEvent("SayHello", EventTest_SayHello)
-	dongo_event.EventManagerEventManager.DispatchEvent("SayHello", []int{1, 3})
+	dongo_event.EventManager.DispatchEvent("SayHello", []int{1, 2, 3})
+	dongo_event.EventManager.RegisterEvent("SayHello", EventTest_SayHello)
+	dongo_event.EventManager.RemoveEvent("SayHello", EventTest_SayHello)
+	dongo_event.EventManager.DispatchEvent("SayHello", []int{1, 3})
+	dongo_event.EventManager.RegisterEvent("SayHello", EventTest_SayHello)
+	dongo_event.EventManager.DispatchEvent("SayHello", []int{1, 3})
 }
 
 // Custom Event
