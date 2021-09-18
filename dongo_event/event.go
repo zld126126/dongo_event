@@ -23,11 +23,11 @@ func (p *_Event) Add(c *TFunction) {
 	isExist := false
 	for _, h := range p.functions {
 		temp := reflect.TypeOf(h)
-		if reflect.DeepEqual(t,temp){
+		if reflect.DeepEqual(t, temp) {
 			isExist = true
 		}
 	}
-	if !isExist{
+	if !isExist {
 		p.functions = append(p.functions, c)
 	}
 }
@@ -38,9 +38,9 @@ func (p *_Event) Remove(c *TFunction) {
 	result := []*TFunction{}
 	for _, h := range p.functions {
 		temp := reflect.TypeOf(h)
-		if reflect.DeepEqual(t,temp){
+		if reflect.DeepEqual(t, temp) {
 			continue
-		}else {
+		} else {
 			result = append(result, h)
 		}
 	}
